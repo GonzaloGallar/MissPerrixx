@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis perris</title>
+    {% load static %} 
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Satisfy|Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'core/css/materialize.min.css' %}">
+    <script src="{% static 'core/js/materialize.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <script src="{% static 'core/js/script.js' %}"></script>
+    <link rel="stylesheet" href=" {% static 'core/csss/style.css' %}">
+</head>
+<body>
+ 
+    <header>
+    <div id="header">
+		<div id="logo">
+			<img src="{% static 'core/imgg/logo.png' %}" alt="logo">
+		</div>
+
+		<ul id="navbar">
+			 <li><a href="/">Inicio</a></li>
+                <li><a href="/galeria">Galeria</a></li>
+                {% if request.user.is_authenticated %}
+                {% if user.username == "admin"%}
+                <li><a href="/admin">Adminitracion</a></li>
+                {% endif %}
+                <li><a href="/formulario">Formulario</a></li>
+                <li><a href="{% url 'logout'  %}">Cerrar Sesion</a></li>
+                 <li><a href="#">Usuario:{{user.username}}</a></li>
+                {% else %}
+                 <li>
+                    <a href="{% url 'register' %}"> Registrate</a>
+                </li>
+                <li>
+                    <a href="{% url 'login' %}">Login</a>
+                </li>
+                {% endif %}
+
+		</ul>
+	</div>
+
+        
+    </header>
+
+    {% block contenidoprincipal %}
+
+    {% endblock contenidoprincipal %}
+
+    {% block contenido %}
+    
+    {% endblock contenido %}
+ 
+ 
+   <footer>
+		<p>Desarrollo web y Mobile</p>
+	</footer>
+
+</body>
+</html>

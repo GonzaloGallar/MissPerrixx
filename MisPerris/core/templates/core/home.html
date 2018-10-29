@@ -1,0 +1,75 @@
+ {% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenidoprincipal %}
+<div class="carousel carousel-slider">
+    {% for m in adoptada %}
+    <a class="carousel-item" href="#{{m.id}}!">
+        <img src="{{m.foto.url}}">
+        <div class="slide-desc hide-on-small-only hide-on-med-only">
+            <h2>{{ m.nombre }}</h2>
+            <p>{{ m.descripcion }}</p>
+        </div>
+    </a>
+    {% endfor %}
+    
+</div>
+
+
+
+
+
+{% endblock contenidoprincipal %}
+
+{% block contenido %}
+<section class="section-texto" style="background:  #85D4B7;"  >
+
+			<section id="telefono">
+				<p>+569 98765242</p>
+			</section>
+			<section id="slogan">
+				<p>Rescate y adopción de perros callejeros</p>
+			</section>
+			<section id="redes-sociales">
+				<a href="https://www.facebook.com" target="_blank">
+					<img class="section-imagen" src="{% static 'core/imgg/facebook.png'%}" alt="facebook">
+				</a>
+				<a href="https://plus.google.com" target="_blank">
+					<img class="section-imagen" src="{% static 'core/imgg/google.png'%}" alt="google">
+				</a>
+				<a href="https://www.instagram.com" target="_blank">
+					<img class="section-imagen" src="{% static 'core/imgg/instagram.png'%}" alt="instagram">
+				</a>
+				<a href="https://www.google.com/gmail" target="_blank">
+					<img class="section-imagen" src="{% static  'core/imgg/email.png' %}" alt="email">
+				</a>
+			</section>
+		</section>
+<section class="container">
+<div class="row">
+    <div class="col m6 s12 text-box right-align">
+        <h3>Rescate</h3>
+        <h5>etapa uno
+            <span class="underline right"></span>
+        </h5>
+        <div class="text">Rescatamos perros en situación de peligro y/o abandono. Lo rehabilitamos y los protegemos para buscarles un hogar.</div>
+        <img src="{% static 'core/img/rescate.jpg' %}" alt="img-rescate">
+    </div>
+
+    <hr class="separator">
+
+    <div class="col m6 s12 text-box left-align">
+        <img src="{% static 'core/img/crowfunding.jpg' %}" alt="img-rescate">
+        <h3>Crowdfunding</h3>
+        <h5>financiamiento
+            <span class="underline"></span>
+        </h5>
+        <div class="text">Sigue nuestras redes sociales para imformarte acercas de las diversas y actividades que realizamos para obtener
+            financiamiento para seguir ayudando.</div>
+
+        <button class="btn-campaign waves-effect waves-light">campañas</button>
+    </div>
+    </div>
+</section>
+{% endblock contenido %} 
