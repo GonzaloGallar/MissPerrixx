@@ -1,0 +1,462 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+#logo{
+	background:  #85D4B7;
+}
+
+#logo{
+	width: 329px;
+    height: 60px;
+	float: left;
+	padding-left:40px;
+}
+#navbar{
+	width: 100%;
+	height: 80px;
+	padding-left: 40%; 
+	background: #85D4B7
+}
+#navbar li{
+	float: left;
+	list-style: none;
+	width: 109px;
+	
+}
+
+#navbar li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 80px;
+	display: block;
+	text-align: center;
+	
+		
+}
+#navbar li a:hover{
+	background: #fff;
+    color: #85D4B7;
+    box-shadow: inset 0 0 0 10px #85D4B7;
+}
+.section-texto {
+	background:  #85D4B7;
+	display: flex;
+    align-items: center;
+	height:100px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	
+}
+.section-texto section{
+	flex: auto;
+	background:  #85D4B7;
+}
+
+
+#telefono 
+{
+	font-size: 20px;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	margin-left: 30px;
+}
+#slogan 
+{
+  
+	font-size: 20px;
+	font-weight: bold;
+}
+	
+	
+.section-imagen 
+{
+	margin-right: 10px;
+	width:40px;
+	height: 40px;
+}
+.section-perro {
+	background-color: #6DCCAA;
+}
+.contenido
+{
+	background: #fff;
+	display: flex;
+	padding-top: 30px;
+	line-height: 1.5;
+	font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+#izquierdo{
+	padding-right: 10px;
+	margin-left: 60px;
+	width: 65%;
+    
+
+}
+#derecho{
+	padding-left: 10px;
+	width: 65%;
+	margin-right:  60px;
+}
+.derecha{
+	text-align: right!important;
+}
+
+#izquierdo img{
+	width: 250px;
+	height: 150px;
+	float: right;
+}
+#derecho img{
+	width: 250px;
+	height: 200px;
+
+}
+#grende-izquierdo{
+	font-size: 30px;
+	font-family: monospace;
+	
+
+}
+#grande-derecho{
+	font-size: 30px;
+	font-family: monospace;
+	
+
+}
+#subtitulo-izquierdo{
+	padding-bottom: 10px;
+	color: rgb(97, 97, 97);
+
+}
+#subtitulo-derecho{
+	padding-bottom: 10px;
+	color: rgb(97, 97, 97);
+
+}
+#descripcion-izquierdo{
+	padding-bottom: 20px;
+}
+#descripcion-derecho{
+	padding-top: 20px;
+	padding-bottom:10px;
+}
+#izquierdo hr 
+{
+	float: right;
+	width: 60px;
+	height:1px;
+	background-color: black;
+}
+#derecho hr 
+{	
+	float: left;
+	width: 60px;
+	height:1px;
+  background-color: black;
+}
+#btn-1{	
+	text-decoration: none;
+	padding: 10px;
+	font-weight: 600;
+	font-size: 15px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 2px solid #000;
+	    
+}
+#btn-1:hover{
+	color: #fff;
+	background-color: #6DCCAA;
+}
+
+.btt{
+
+	text-decoration: none;
+	padding: 10px;
+	font-weight: 600;
+	font-size: 15px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #000;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	    
+
+}
+.btt:hover{
+	color: #fff;
+	background-color: #6DCCAA;
+}
+
+.container {
+	max-width: 1000px;
+	margin:0 auto;
+	margin-top: 20px;
+	border: 2px solid #000;
+}
+#galeria p{
+	margin: 10px;
+	font-family: monospace;
+	text-align: center;
+	font-size: 30px;
+}
+.gallery {
+	display: flex;
+	
+	list-style: none;
+	padding: 0;
+	margin: auto;
+	width:100% ;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 10px;
+}
+.gallery li a img{
+	width: 230px;
+    height: 200px;
+	margin-bottom:-5px; 
+	object-fit: cover;
+}
+
+.gallery li {
+	margin: 4px;
+	display: inline-block;
+	border: solid;
+}
+#formu form{
+	width: 40%;
+	margin: auto;
+	background: #85D4B7;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 7px;
+}
+#formu form h2{
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#formu form input,select{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+}
+#formu form select{
+	padding: .7em 2.5em .7em 1em;
+}
+footer{
+	margin-top: 20px;
+	width:100%;
+	height: 5vw;
+	background: rgb(218, 215, 215);
+}
+footer p {
+	padding-left: 10px;
+	padding-top: 10px;;
+}
+.leb{
+	font-family: monospace;
+	color: #fff;
+	font-size: 20px;
+	
+}
+
+
+@media screen and (max-width:1060px){
+	#header{
+		width: 100%;
+		height: 80px;
+		background: #85D4B7;
+		position:relative;
+		top:80px;
+	}
+	#logo{
+		width:100%;
+		float: left;
+		height: 80px;
+		padding-left:initial;
+		padding-top: 10px;
+		position: absolute;
+		top:-90px;
+		background:  #85D4B7;
+	}
+	#navbar{
+		width:100%;
+		height: 60px;
+		padding: 0;
+	}
+	#navbar li{
+		width: 18%;
+		text-align: center;
+		
+	}
+	#navbar li a{
+		font-size: 16px;
+	}
+
+	#pic{
+		padding-top: 80px;
+	}
+	
+    #telefono{
+
+	 font-size: 15px;
+	 font-family: 'Arial', sans-serif;
+	 font-weight: bold;
+	 margin-left: 30px;
+	}
+   #slogan {
+	 font-size: 15px;
+	 font-weight: bold;
+	}     
+	
+
+	
+	
+}
+@media screen and (max-width:768px){
+	#header{
+		height: 50px;
+	}
+	#navbar{
+		width:100%;
+		height: 50px;
+		margin: 0px auto;
+		}
+	#navbar li{
+		width: 19%;
+		height: 50px;
+		
+		}
+	#navbar li a{
+
+		font-size: 16px;
+		line-height: 50px;
+	}
+
+	#pic{
+		padding-top: 80px;
+	}
+	
+	.contenido{
+		display:block;
+	}
+
+	#izquierdo{
+		padding: 0;
+		margin: 0;
+		width: 80%;
+		margin-left: 10%
+
+	
+	}
+	#derecho{
+		padding: 0;
+		margin: 0;
+		margin-left: 10%;
+		padding-top: 200px;
+		width: 80%;
+		margin-right: 10%;
+		
+	}
+	.gallery li a img{
+		width: 130px;
+		height: 130px;
+	}
+	#formu form{
+		width: 60%;
+		margin: auto;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		margin-top: 20px;
+		border-radius: 7px;
+	}
+	footer{
+		height: 10vw;
+
+	}
+
+
+}
+@media screen and (max-width: 480px){
+	#header{
+		width: 100%;
+		height: 60px;
+		background: rgb(133, 212, 163);
+	}
+	
+	#navbar{
+		width: 100%;
+		height: 60px;
+		float: none;
+	}
+	#navbar li a{
+		display: block;
+		color: #fff;
+		line-height: 60px;
+		font-size: 16px;
+		background: rgb(125, 201, 173);
+		text-align: center;
+	}
+	#navbar li{
+		
+		width: 100%;
+		list-style:none;
+		float:  none;
+		border-bottom:1px solid rgb(133, 175, 163);
+		border-top: 1px solid rgb(133, 175, 163);
+	}
+	#pic{
+		padding-top: 230px;
+		
+	}	
+
+	.gallery li a img{
+		width: 100px;
+		height: 100px;
+	}
+	#formu form{
+		width: 80%;
+		margin: auto;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		margin-top: 20px;
+		border-radius: 7px;
+	}
+	footer {
+		height: 15vw;
+
+	}
+	
+}
+
+@media screen and (max-width: 700px){
+	#telefono{
+		visibility: hidden;
+		font-size: 0;
+	}
+    #slogan{
+		visibility: hidden;
+		font-size: 0;
+	}
+	#redes-sociales{
+		padding-right: 15vw; 
+	}
+
+
+}
